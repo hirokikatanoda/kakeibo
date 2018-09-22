@@ -1,0 +1,13 @@
+<%= javascript_include_tag "https://www.gstatic.com/charts/loader.js" %>
+<%= pie_chart Account.group(:name).sum(:price), stacked: true %>
+
+<div class="col-md-1">
+  <%= link_to '記帳', new_account_path, class: 'btn btn-block btn-black' %>
+</div>
+<div class="col-md-1">
+  <%= link_to '編集', edit_show_path, class: 'btn btn-block btn-black' %>
+</div>
+<div class="col-md-offset-8 sougaku">
+  <%= Account.sum(:price) %>
+  <%= "円" %>
+</div>

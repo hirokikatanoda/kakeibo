@@ -1,0 +1,23 @@
+
+<div class="edit-container">
+  <% @account.each do |account| %>
+    <div class="row">
+      <div class="col-md-offset-5">
+        <div class="edit-block">
+          <li><%= account.created_at %></li>
+          <li><%= account.name %></li>
+          <li><%= account.price %></li>
+        </div>
+        <div class="col-md-2">
+          <%= link_to '編集', edit_account_path(id: account.id), class: 'btn btn-block btn-black' %>
+        </div>
+        <div class="col-md-2">
+          <%= link_to '削除', delete_show_path(id: account.id), class: 'btn btn-block btn-black' %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+  <div class="col-md-1 edit-back">
+    <%= link_to 'Top', accounts_path, class: 'btn btn-block btn-black' %>
+  </div>
+</div>

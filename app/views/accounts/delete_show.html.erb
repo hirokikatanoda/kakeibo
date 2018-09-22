@@ -1,0 +1,14 @@
+<div class="col-md-offset-5">
+  <h2>本当に削除しますか？</h2>
+  <div class="edit-block">
+    <li><%= @account.created_at %></li>
+    <li><%= @account.name %></li>
+    <li><%= @account.price %></li>
+  </div>
+  <div class="col-md-2">
+    <%= link_to 'はい', destroy_path(id: @account.id), class: 'btn btn-block btn-black' %>
+  </div>
+  <div class="col-md-2">
+    <%= link_to 'いいえ', edit_show_path, class: 'btn btn-block btn-black' %>
+  </div>
+</div>

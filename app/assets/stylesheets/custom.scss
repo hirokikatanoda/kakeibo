@@ -1,0 +1,57 @@
+.account-container {
+  margin-top: 200px;
+}
+
+.text-tittle {
+  text-align: center;
+}
+
+.btn-black {
+  color: #565656;
+  border: 1px solid #565656;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 5px;
+  background-color: rgba(0,0,0,0.0);
+
+  &:hover {
+    color: #565656;
+  }
+}
+
+.edit-container {
+  margin-bottom: 40px;
+
+  .edit-block {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+.alert {
+  margin-bottom: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
+
+.navbar-transparent {
+  margin-bottom: 0px;
+  background-color: rgba(0,0,0,0.5);
+  a {
+    color: #fff !important;
+  }
+
+  .navbar-brand {
+    padding: 0px;
+    margin-top: 15px;
+  }
+}
+
+.sougaku {
+  font-size: 40px;
+}
+
+.edit-back {
+  margin-top: 70px;
+}
